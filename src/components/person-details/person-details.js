@@ -22,7 +22,6 @@ export default class PersonDetails extends Component {
   componentDidUpdate(prevProps) {
     if (this.props.personId !== prevProps.personId) {
       this.updatePerson();
-      this.interval = setInterval(this.updatePerson, 10000);
     }
   }
 
